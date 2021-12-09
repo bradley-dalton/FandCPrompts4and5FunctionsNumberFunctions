@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- 4. FUNCTION ASSIGNMENT BELOW, "HELLO USER" -->
+<script>
+  function popup(theName) {
+   alert("Hello, " + theName + "!")
+  }
+  popup("Ali")
+  popup("Dan")
+  popup("Yasmin")
+  popup("Joe")
+
+  console.log(popup);
+
+  <!-- 4. FUNCTION ASSIGNMENT BELOW, "WHAT TYPE" -->
+  console.log(typeof 626);
+
+  console.log(typeof 'concrete');
+
+  console.log(typeof false);
+
+  let myNiftyThing = "Why is the sky blue";
+  console.log(typeof(myNiftyThing));
+
+  <!-- 4. FUNCTION ASSIGNMENT BELOW, "CHECK LENGTH" ... I tried to follow the example given by F&C using "checkType", the example didn't return a value in my console. I've solved the problem as follows-->
+
+  var myFavoriteOneWordSuperGroup = "Nirvana"
+  console.log(myFavoriteOneWordSuperGroup.length);
+
+  var oneWordSuperGroups = ["Wham", "Oasis", "Cream", "Aqua", "Nirvana", "Cream", "Yes", "Poison", "Bread", "Blur", "Cake"]
+  console.log(oneWordSuperGroups.length);
+
+  <!-- note: as an extra project (above) I tried a different function to count the number of variables in an array. -->
+
+  <!-- 5. NUMBER FUNCTIONS, SUM OF TWO NUMBERS -->
+
+  function add(number1, number2) {
+  return number1 + number2;
+  }
+  console.log(add(9, 10));
+
+  <!-- 5. NUMBER FUNCTIONS, ADD AND MULTIPLY -->
+
+  function addAndMultiply(a, b, c, d) {
+  return (a + b) * (c + d);
+  }
+
+  console.log(addAndMultiply(1,3,1,10));
+
+  <!-- 5. NUMBER FUNCTIONS, RETURN LARGER -->
+
+  var checkLarger = [1, 1111, 111, 11];
+
+  console.log(Math.max(...checkLarger));
+
+  <!-- 5. NUMBER FUNCTIONS, SUM OF ELEMENTS -->
+
+  var sum = [1, 2, 3, 4, 5].reduce(add, 0);
+  function add(accumulator, a) {
+  return accumulator + a;
+  }
+
+  console.log(sum);
+
+  <!-- 5. NUMBER FUNCTIONS, SQUARING A NUMBER -->
+
+  function square(number) {
+  return number * number;
+  }
+  console.log(square(9));
+
+  <!-- 5. NUMBER FUNCTIONS, ODD OR EVEN -->
+
+  function isItEven(number) {
+  if (number % 2 === 0) return "even";
+  return "odd";
+  }
+  console.log(isItEven(1));
+
+  <!-- 5. NUMBER FUNCTIONS, SUM OF POSITIVE -->
+
+  function positiveNumbers(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+  if (arr[i] >= 0) sum += arr[i];
+  }
+  return sum;
+  }
+  console.log(positiveNumbers([2, 4, 8, 11, -2, -100, -111]));
+</script>
